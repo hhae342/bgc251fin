@@ -15,7 +15,7 @@ function setup() {
         y: idY,
         vx: 0,
         vy: 0,
-        colour: color(random(170, 255), 100, 95),
+        colour: color(random(160, 255), 100, 100),
       });
     }
   }
@@ -68,7 +68,7 @@ function draw() {
     }
 
     fill(particle.colour);
-    let scale = random(2, 3);
+    let scale = random(1, 3);
     ellipse(particle.x, particle.y, scale);
   }
 }
