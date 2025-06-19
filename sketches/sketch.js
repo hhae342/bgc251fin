@@ -8,8 +8,8 @@ function setup() {
   background(0);
   colorMode(HSB);
 
-  for (let idY = 0; idY < height; idY += 15) {
-    for (let idX = 0; idX < width; idX += 15) {
+  for (let idY = 0; idY < height; idY += 12) {
+    for (let idX = 0; idX < width; idX += 12) {
       particles.push({
         x: idX,
         y: idY,
@@ -69,7 +69,7 @@ function draw() {
     }
 
     fill(particle.colour);
-    let scale = random(1, 3);
+    let scale = random(0, 2);
     ellipse(particle.x, particle.y, scale);
   }
 }
