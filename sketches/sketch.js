@@ -26,7 +26,7 @@ function draw() {
   background('black');
   noStroke();
   let minSpeed = map(mouseX, 0, width, 1, 3);
-  let maxSpeed = map(mouseY, 0, height, 4, 7);
+  let maxSpeed = map(mouseY, 0, height, 4, 6);
   for (let i = 0; i < particles.length; i++) {
     let particle = particles[i];
 
@@ -57,19 +57,19 @@ function draw() {
 
     if (particle.x < r) {
       particle.x = r;
-      particle.vx *= -0.6;
+      particle.vx *= -0.7;
     }
     if (particle.x > width - r) {
       particle.x = width - r;
-      particle.vx *= -0.6;
+      particle.vx *= -0.7;
     }
     if (particle.y < r) {
       particle.y = r;
-      particle.vy *= -0.6;
+      particle.vy *= -0.7;
     }
     if (particle.y > height - r) {
       particle.y = height - r;
-      particle.vy *= -0.6;
+      particle.vy *= -0.7;
     }
 
     fill(particle.colour);
