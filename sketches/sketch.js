@@ -4,7 +4,7 @@ let particles = [];
 const r = 3;
 
 function setup() {
-  new Responsive().createResponsiveCanvas(800, 800, 'contain', true);
+  new Responsive().createResponsiveCanvas(800, 600, 'contain', true);
   background(0);
   colorMode(HSB);
 
@@ -15,7 +15,7 @@ function setup() {
         y: idY,
         vx: 0,
         vy: 0,
-        colour: color(random(200, 240), 100, 100),
+        colour: color(random(190, 255), 100, 100),
       });
     }
   }
@@ -69,7 +69,7 @@ function draw() {
     }
 
     fill(particle.colour);
-    let scale = random(1, 3);
+    let scale = random(1, 4);
     ellipse(particle.x, particle.y, scale);
   }
 }
