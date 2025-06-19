@@ -31,18 +31,14 @@ function draw() {
     let particle = particles[i];
 
     let Vx = map(
-      noise(particle.x * 0.00001, particle.y * 0.0001, frameCount * 0.001),
+      noise(particle.x * 0.00001, particle.y * 0.008, frameCount * 0.001),
       0,
       1,
       minSpeed,
       maxSpeed
     );
     let Vy = map(
-      noise(
-        particle.y * 0.00001,
-        particle.x * 0.0001,
-        frameCount * 0.01 + 1000
-      ),
+      noise(particle.y * 0.00001, particle.x * 0.008, frameCount * 0.01 + 1000),
       0,
       1,
       minSpeed,
