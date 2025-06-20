@@ -73,7 +73,7 @@ function draw() {
     }
 
     fill(particle.colour);
-    let scale = random(0, 2);
+    let scale = random(0, 3);
     ellipse(particle.x, particle.y, scale);
   }
 }
